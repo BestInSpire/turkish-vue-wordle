@@ -75,7 +75,7 @@ function completeRow() {
     const guess = currentRow.map((tile) => tile.letter).join('')
     if (!allWords.includes(guess) && guess !== answer) {
       shake()
-      showMessage(`Not in word list`)
+      showMessage(`Kelime listesinde bulunmuyor!`)
       return
     }
 
@@ -113,7 +113,7 @@ function completeRow() {
       setTimeout(() => {
         grid = genResultGrid()
         showMessage(
-          ['Genius', 'Magnificent', 'Impressive', 'Splendid', 'Great', 'Phew'][
+          ['Dahi', 'Muhteşem', 'Etkileyici', 'Görkemli', 'Harika'][
             currentRowIndex
           ],
           -1
@@ -134,7 +134,7 @@ function completeRow() {
     }
   } else {
     shake()
-    showMessage('Not enough letters')
+    showMessage('Yeterli harf yok!')
   }
 }
 
