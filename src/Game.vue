@@ -43,9 +43,9 @@ onUnmounted(() => {
 
 function onKey(key: string) {
   if (!allowInput) return
-  if (/^[a-zA-Z]$/.test(key)) {
+  if (/^[a-zA-ZğüşöçıİĞÜŞÖÇ]$/.test(key)) {
     fillTile(key.toLowerCase())
-  } else if (key === 'Backspace') {
+  } else if (key === 'SİL') {
     clearTile()
   } else if (key === 'Enter') {
     completeRow()
@@ -179,12 +179,12 @@ function genResultGrid() {
     </div>
   </Transition>
   <header>
-    <h1>VVORDLE</h1>
+    <h1>VVORDLE - TR</h1>
     <a
       id="source-link"
-      href="https://github.com/yyx990803/vue-wordle"
+      href="https://github.com/BestInSpire/turkish-vue-wordle"
       target="_blank"
-      >Source</a
+      >Kaynak Kodu</a
     >
   </header>
   <div id="board">
