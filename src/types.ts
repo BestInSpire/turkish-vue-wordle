@@ -1,6 +1,6 @@
 export const enum LetterState {
   INITIAL = 0,
-  CORRECT = 'correct',
-  PRESENT = 'present',
-  ABSENT = 'absent'
+  CORRECT = 'doğru',
+  PRESENT = 'yeri yanlış',
+  ABSENT = 'yok'
 }
