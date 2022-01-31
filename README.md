@@ -1,4 +1,4 @@
-# Vue Wordle
+# Turkish Vue Wordle
 
 [demo](https://turkish-vue-wordle.netlify.app/)
 
