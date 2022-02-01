@@ -45,7 +45,7 @@ function onKey(key: string) {
   if (!allowInput) return
   if (/^[a-zA-ZğüşöçıİĞÜŞÖÇ]$/.test(key)) {
     fillTile(key.toLowerCase())
-  } else if (key === 'SİL') {
+  } else if (key === 'Backspace') {
     clearTile()
   } else if (key === 'Enter') {
     completeRow()
@@ -179,12 +179,12 @@ function genResultGrid() {
     </div>
   </Transition>
   <header>
-    <h1>VVORDLE - TR</h1>
+    <h1>VVORDLE-TR</h1>
     <a
       id="source-link"
       href="https://github.com/BestInSpire/turkish-vue-wordle"
       target="_blank"
-      >Kaynak Kodu</a
+      >Kaynak</a
     >
   </header>
   <div id="board">
