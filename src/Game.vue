@@ -210,7 +210,7 @@ function genResultGrid() {
             animationDelay: `${index * 100}ms`
           }"
         >
-          {{ tile.letter }}
+          {{ tile.letter.replace(/i/g, 'İ') }}
         </div>
       </div>
     </div>
