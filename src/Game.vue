@@ -201,7 +201,7 @@ function genResultGrid() {
         :class="['tile', tile.letter && 'filled', tile.state && 'revealed']"
       >
         <div class="front" :style="{ transitionDelay: `${index * 300}ms` }">
-          {{ tile.letter }}
+          {{ tile.letter.replace(/i/g, 'İ') }}
         </div>
         <div
           :class="['back', tile.state]"
